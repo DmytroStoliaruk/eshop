@@ -1,0 +1,17 @@
+<h1>Wellcome to Eshop!</h1>
+
+<p>List of users: </p>
+<p>  </p>
+<ul>
+  <% @users.each do |user| %>
+    <li><%= user.email %></li>
+  <% end %>
+</ul>
+
+<%= button_to "Logout", destroy_user_session_path, method: :delete %>
+
+
+<p> <%= @translate_str %> </p>
+
+<%= @currency_rate %> 
+
