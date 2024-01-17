@@ -1,0 +1,13 @@
+<header>
+  <div class="flex justify-between flex text-center items-center">
+    <div></div> <!-- empty block for centering text -->
+      <% if user_signed_in? %>
+        <%= "#{current_user.email}, welcome to E-Shop!" %>
+        <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn-gray" %>
+      <% else %>
+        Welcome to E-Shop!
+        <%= link_to "Login", new_user_session_path, class: "btn-gray" %>
+      <% end %>
+    </div>
+  </div>
+</header>

@@ -1,17 +1,9 @@
-<h1>Wellcome to Eshop!</h1>
+<div>
+  <h1>This is a future service for byiung pruducts from China site 1688.com</h1>
+  <br>
+  <p>Example of translate string: <%= @translate_str %> </p>
 
-<p>List of users: </p>
-<p>  </p>
-<ul>
-  <% @users.each do |user| %>
-    <li><%= user.email %></li>
-  <% end %>
-</ul>
+  <p>Currency rate for code  840 is <%= @currency_rate %> </p>
 
-<%= button_to "Logout", destroy_user_session_path, method: :delete %>
-
-
-<p> <%= @translate_str %> </p>
-
-<%= @currency_rate %> 
-
+  <p>Title for product is <%= @product_data %> </p>
+</div>
